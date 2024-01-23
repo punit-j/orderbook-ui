@@ -1,0 +1,106 @@
+.app {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins";
+  font-size: 14px;
+  flex-direction: column;
+}
+.alert-container {
+  position: fixed;
+  /* bottom: 20px; */
+  right: 20px;
+  z-index: 9999;
+  pointer-events: none;
+}
+.label {
+  color: #6a6a6a;
+  font-size: 18px;
+}
+.heading {
+  font-weight: 700;
+  color: #158de8;
+  text-align: left;
+}
+
+.value {
+  color: #6a6a6a;
+  text-align: right;
+}
+
+.gas-limit-container {
+  cursor: pointer;
+}
+
+.Card {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background: rgba(255, 255, 255, 0.15);
+  margin: 12px;
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.Card:hover {
+  box-shadow: -6px 6px 32px 0px rgba(157, 115, 232, 0.2),
+    6px 6px 32px 0px rgb(6 7 118 / 48%);
+}
+
+/* overrides */
+
+.btn {
+  background: transparent;
+  font-size: small;
+  font-weight: bold;
+  color: black;
+  border: none;
+  outline: none;
+  margin: 0;
+  height: 45px;
+  width: 100%;
+  cursor: pointer;
+}
+.btn:hover {
+  box-shadow: -6px 6px 32px 0px rgba(157, 115, 232, 0.2),
+    6px 6px 32px 0px rgba(178, 179, 214, 0.48);
+}
+.btn:disabled {
+  cursor: not-allowed;
+}
+.row {
+  margin: 10px 0px !important;
+}
+
+.form-control {
+  background-color: #ebebeb !important;
+  border: 0 !important;
+}
+
+.card {
+  box-shadow: 0px 5px 20px #6a6a6a !important;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
